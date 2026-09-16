@@ -94,7 +94,7 @@ export function ServicesOverviewSection({
                     )}
                   </div>
 
-                  <h3 className="text-xl font-black text-black tracking-tight mb-2.5 group-hover:underline">
+                  <h3 className="text-xl font-black text-black tracking-tight mb-2.5">
                     {service.title}
                   </h3>
                   <p className="text-sm text-black/80 leading-relaxed mb-6">
@@ -128,7 +128,7 @@ export function ServicesOverviewSection({
                   </div>
                   <Link
                     href={`/services#${service.id}`}
-                    className="inline-flex items-center text-xs font-bold text-black hover:underline group-hover:translate-x-0.5"
+                    className="inline-flex items-center text-xs font-bold text-black hover:text-[#093103] group-hover:translate-x-0.5 transition-colors"
                   >
                     <span>Learn More</span>
                     <ArrowRight className="w-3.5 h-3.5 ml-1 text-black transition-transform group-hover:translate-x-1" />

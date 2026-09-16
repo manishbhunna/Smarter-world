@@ -137,7 +137,7 @@ export function Footer() {
             </div>
             <div>
               <p className="text-xs text-black/70">Direct Inquiries</p>
-              <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black hover:underline font-bold">
+              <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black hover:text-[#093103] font-bold transition-colors">
                 {SITE_CONFIG.contact.email}
               </a>
             </div>
@@ -149,7 +149,7 @@ export function Footer() {
             </div>
             <div>
               <p className="text-xs text-black/70">Client Support & Sales</p>
-              <a href={`tel:${SITE_CONFIG.contact.phone.replace(/\D/g, "")}`} className="text-black hover:underline font-bold">
+              <a href={`tel:${SITE_CONFIG.contact.phone.replace(/\D/g, "")}`} className="text-black hover:text-[#093103] font-bold transition-colors">
                 {SITE_CONFIG.contact.phone}
               </a>
             </div>
@@ -170,13 +170,13 @@ export function Footer() {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-black/70">
           <p>© {new Date().getFullYear()} Smarter World Agency. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-black hover:underline transition-colors">
+            <Link href="/privacy" className="hover:text-black transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-black hover:underline transition-colors">
+            <Link href="/terms" className="hover:text-black transition-colors">
               Terms of Service
             </Link>
-            <Link href="/sitemap.xml" className="hover:text-black hover:underline transition-colors">
+            <Link href="/sitemap.xml" className="hover:text-black transition-colors">
               Sitemap
             </Link>
           </div>

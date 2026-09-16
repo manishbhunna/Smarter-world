@@ -83,8 +83,8 @@ export function ServicesClient() {
 
   return (
     <div className="space-y-28">
-      {/* 1. Sticky / Refined Filter & Search Toolbar */}
-      <div className="sticky top-20 z-30 bg-[#dbd8cf]/95 backdrop-blur-md border border-[#093103]/25 rounded-2xl p-4 sm:p-5 shadow-[0_8px_30px_rgba(9,49,3,0.06)]">
+      {/* 1. Refined Filter & Search Toolbar */}
+      <div className="bg-[#dbd8cf] border border-[#093103]/25 rounded-2xl p-4 sm:p-5 shadow-card">
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
           {/* Category Tabs */}
           <div className="flex flex-wrap items-center gap-2">
@@ -162,7 +162,7 @@ export function ServicesClient() {
                 setActiveCategory("All");
                 setSearchQuery("");
               }}
-              className="font-bold text-black hover:underline cursor-pointer flex items-center gap-1"
+              className="font-bold text-black hover:text-[#093103] cursor-pointer flex items-center gap-1 transition-colors"
             >
               Reset Filters
             </button>
@@ -561,7 +561,7 @@ export function ServicesClient() {
             Have a specialized architecture question or custom RFP?{" "}
             <Link
               href="/contact"
-              className="font-bold text-black underline hover:text-black/80 decoration-[#093103] decoration-2 underline-offset-4"
+              className="font-bold text-black hover:text-[#093103] transition-colors"
             >
               Speak directly with our technical lead
             </Link>

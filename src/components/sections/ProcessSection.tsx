@@ -54,7 +54,7 @@ export function ProcessSection() {
                     Phase 0{idx + 1}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-black mb-3 group-hover:underline">
+                <h3 className="text-xl font-bold text-black mb-3">
                   {step.title}
                 </h3>
                 <p className="text-sm text-black/80 leading-relaxed mb-6">

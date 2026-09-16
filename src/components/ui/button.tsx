@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost:
           "text-black hover:bg-[#093103] hover:text-white transition-colors",
         link:
-          "text-black underline-offset-4 hover:underline p-0 h-auto font-bold",
+          "text-black hover:text-[#093103] p-0 h-auto font-bold transition-colors",
         dark:
           "bg-black text-white hover:bg-[#093103] active:scale-[0.98]",
         cyan:

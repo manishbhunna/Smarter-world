@@ -18,7 +18,7 @@ export default function PrivacyPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <Link
           href="/"
-          className="inline-flex items-center text-sm font-bold text-black hover:underline transition-colors"
+          className="inline-flex items-center text-sm font-bold text-black hover:text-[#093103] transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-1.5" />
           Back to Home
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold text-black pt-4">3. Data Retention and Security</h2>
           <p>
             We apply industry-standard encryption in transit (TLS 1.3) and at rest. You may request deletion of your contact data or archived project communications at any time by contacting us at{" "}
-            <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black font-bold underline">
+            <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black font-bold hover:text-[#093103] transition-colors">
               {SITE_CONFIG.contact.email}
             </a>.
           </p>

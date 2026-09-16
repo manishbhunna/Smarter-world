@@ -76,11 +76,7 @@ export function HeroSection() {
 
               {/* Monumental Headline */}
               <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black text-black tracking-tight leading-[1.06] mb-5 sm:mb-6">
-                Engineering the{" "}
-                <span className="underline decoration-[#093103] decoration-4 underline-offset-8">
-                  Smarter World
-                </span>{" "}
-                of Digital Products
+                Engineering the Smarter World of Digital Products
               </h1>
 
               {/* Editorial Lead Paragraph */}

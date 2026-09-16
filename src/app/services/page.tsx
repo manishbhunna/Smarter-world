@@ -40,10 +40,7 @@ export default function ServicesPage() {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-black tracking-tight leading-[1.08]">
-              High-Performance Engineering &{" "}
-              <span className="underline decoration-[#093103] decoration-4 underline-offset-8">
-                Autonomous AI
-              </span>
+              High-Performance Engineering & Autonomous AI
             </h1>
 
             {/* Editorial Lead Paragraph */}

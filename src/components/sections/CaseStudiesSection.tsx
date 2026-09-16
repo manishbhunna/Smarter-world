@@ -61,7 +61,7 @@ export function CaseStudiesSection() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-black mb-3 leading-snug group-hover:underline">
+                <h3 className="text-xl font-bold text-black mb-3 leading-snug">
                   {study.title}
                 </h3>
                 <p className="text-sm text-black/80 leading-relaxed mb-6">

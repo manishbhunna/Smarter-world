@@ -18,7 +18,7 @@ export default function TermsPage() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <Link
           href="/"
-          className="inline-flex items-center text-sm font-bold text-black hover:underline transition-colors"
+          className="inline-flex items-center text-sm font-bold text-black hover:text-[#093103] transition-colors"
         >
           <ArrowLeft className="w-4 h-4 mr-1.5" />
           Back to Home

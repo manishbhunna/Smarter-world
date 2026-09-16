@@ -89,10 +89,7 @@ export default function AboutPage() {
               About Smarter World
             </Badge>
             <h1 className="text-4xl sm:text-6xl font-black text-black tracking-tight leading-tight">
-              Building the Digital Engines That Power the{" "}
-              <span className="underline decoration-[#093103] decoration-4 underline-offset-8">
-                Future
-              </span>
+              Building the Digital Engines That Power the Future
             </h1>
             <p className="text-lg text-black/80 leading-relaxed">
               We are an elite team of senior engineers, product strategists, and AI system architects dedicated to delivering high-impact digital experiences.
@@ -214,7 +211,7 @@ export default function AboutPage() {
                     <div className="w-12 h-12 rounded-xl bg-[#093103] flex items-center justify-center text-white shadow-forest">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-black group-hover:underline">{val.title}</h3>
+                    <h3 className="text-lg font-bold text-black">{val.title}</h3>
                     <p className="text-sm text-black/80 leading-relaxed">
                       {val.description}
                     </p>

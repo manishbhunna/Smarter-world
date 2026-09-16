@@ -30,10 +30,7 @@ export default function ContactPage() {
             Direct Communication
           </Badge>
           <h1 className="text-4xl sm:text-6xl font-black text-black tracking-tight leading-tight">
-            Connect Directly with Our{" "}
-            <span className="underline decoration-[#093103] decoration-4 underline-offset-8">
-              Engineering Team
-            </span>
+            Connect Directly with Our Engineering Team
           </h1>
           <p className="text-base sm:text-lg text-black/80 leading-relaxed">
             No slow forms or bureaucratic layers. Reach out directly to our principal architects via email or phone to discuss your project roadmap, architecture, and timeline.
@@ -155,7 +152,7 @@ export default function ContactPage() {
             </div>
 
             <p className="text-sm text-black/80 leading-relaxed">
-              To discuss a new project, email us directly at <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black font-bold underline">{SITE_CONFIG.contact.email}</a> with any of the following details:
+              To discuss a new project, email us directly at <a href={`mailto:${SITE_CONFIG.contact.email}`} className="text-black font-bold hover:text-[#093103] transition-colors">{SITE_CONFIG.contact.email}</a> with any of the following details:
             </p>
 
             <div className="space-y-3.5 text-sm text-black">
