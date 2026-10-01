@@ -86,7 +86,7 @@ export function Navbar() {
           <div className="flex items-center gap-2.5 z-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl text-white bg-[#093103] hover:bg-black shadow-forest transition-all duration-200 hover:scale-105"
+              className="hidden md:inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl text-white bg-[#093103] hover:bg-black shadow-forest transition-all duration-200 hover:scale-105"
             >
               Contact Now
             </Link>
