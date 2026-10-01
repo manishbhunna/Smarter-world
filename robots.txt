@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /private/
 
-Sitemap: https://smarterworld.agency/sitemap.xml
+Sitemap: https://acovate.agency/sitemap.xml
