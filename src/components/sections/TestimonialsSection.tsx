@@ -16,7 +16,7 @@ export function TestimonialsSection() {
             Trusted by Builders, Founders & Growth Leaders
           </h2>
           <p className="text-base sm:text-lg text-black/80 leading-relaxed max-w-2xl mx-auto">
-            See how Smarter World&apos;s engineering and AI solutions drive measurable, lasting momentum.
+            See how Acovate&apos;s engineering and AI solutions drive measurable, lasting momentum.
           </p>
         </div>
 

@@ -26,6 +26,7 @@ export function JsonLd() {
         sameAs: [
           SITE_CONFIG.socials.twitter,
           SITE_CONFIG.socials.linkedin,
+          SITE_CONFIG.socials.instagram,
           SITE_CONFIG.socials.github,
         ],
       },

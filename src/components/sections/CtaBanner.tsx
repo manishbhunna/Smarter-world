@@ -10,7 +10,7 @@ interface CtaBannerProps {
 }
 
 export function CtaBanner({
-  title = "Ready to Build Something Smarter?",
+  title = "Ready to Build with Acovate?",
   subtitle = "Connect directly with our senior engineering team to map your technical requirements, architecture, and timeline.",
   buttonText = "Start Your Project",
 }: CtaBannerProps) {

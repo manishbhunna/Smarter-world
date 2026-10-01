@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Smarter World",
-  description: "Privacy policy and data protection principles of Smarter World agency.",
+  title: "Privacy Policy | Acovate",
+  description: "Privacy policy and data protection principles of Acovate agency.",
   alternates: {
     canonical: "/privacy",
   },

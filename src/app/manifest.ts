@@ -3,8 +3,8 @@ import { SITE_CONFIG } from "@/lib/utils";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Smarter World - Digital & AI Agency",
-    short_name: "Smarter World",
+    name: `${SITE_CONFIG.name} - Digital & AI Agency`,
+    short_name: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
     start_url: "/",
     display: "standalone",

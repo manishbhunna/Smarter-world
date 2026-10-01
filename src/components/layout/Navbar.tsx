@@ -8,8 +8,8 @@ import { Menu, X, Sparkles } from "lucide-react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
+  { href: "/insights", label: "Insights" },
   { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact Us" },
 ];
 
 export function Navbar() {
@@ -44,14 +44,14 @@ export function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-3 group focus:outline-none z-10"
-            aria-label="Smarter World Home"
+            aria-label="Acovate Home"
           >
             <div className="relative w-10 h-10 rounded-xl bg-[#093103] shadow-forest flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-extrabold tracking-tight text-black leading-none">
-                Smarter<span className="text-black">World</span>
+                Acovate
               </span>
               <span className="text-[10px] font-semibold tracking-wider text-black/70 uppercase mt-1">
                 Digital & AI Agency
@@ -82,8 +82,14 @@ export function Navbar() {
             })}
           </nav>
 
-          {/* Mobile Menu Button - Right */}
-          <div className="flex items-center z-10">
+          {/* Contact Now Action Button & Mobile Menu - Right */}
+          <div className="flex items-center gap-2.5 z-10">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl text-white bg-[#093103] hover:bg-black shadow-forest transition-all duration-200 hover:scale-105"
+            >
+              Contact Now
+            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -99,7 +105,7 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden border-b border-[#093103]/20 bg-[#dbd8cf] px-4 pt-3 pb-6 space-y-2 shadow-card animate-in slide-in-from-top-2">
+        <div className="md:hidden border-b border-[#093103]/20 bg-[#dbd8cf] px-4 pt-3 pb-6 space-y-3 shadow-card animate-in slide-in-from-top-2">
           <nav className="flex flex-col space-y-1.5 text-center" aria-label="Mobile Navigation">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
@@ -118,6 +124,15 @@ export function Navbar() {
               );
             })}
           </nav>
+
+          <div className="pt-2">
+            <Link
+              href="/contact"
+              className="flex items-center justify-center w-full px-4 py-3 text-sm font-bold rounded-xl text-white bg-[#093103] hover:bg-black shadow-forest transition-all"
+            >
+              Contact Now
+            </Link>
+          </div>
         </div>
       )}
     </header>

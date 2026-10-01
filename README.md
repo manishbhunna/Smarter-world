@@ -1,6 +1,6 @@
-# Smarter World — Digital Agency Website
+# Acovate — Digital Agency Website
 
-Modern, high-performance, and fully responsive static website for **Smarter World**, a premier digital agency specializing in full-spectrum digital engineering and autonomous AI agent solutions.
+Modern, high-performance, and fully responsive static website for **Acovate**, a premier digital agency specializing in full-spectrum digital engineering and autonomous AI agent solutions.
 
 ---
 

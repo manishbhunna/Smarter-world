@@ -1,6 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import { Sparkles, Mail, Phone, MapPin, CheckCircle2 } from "lucide-react";
+import {
+  Sparkles,
+  Mail,
+  Phone,
+  MapPin,
+  CheckCircle2,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Github,
+} from "lucide-react";
 import { SITE_CONFIG } from "@/lib/utils";
 import { SERVICES_DATA } from "@/data/servicesData";
 
@@ -22,7 +32,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight text-black leading-none">
-                  SmarterWorld
+                  Acovate
                 </span>
                 <span className="text-[10px] font-semibold tracking-wider text-black/70 uppercase mt-1">
                   Digital & AI Agency
@@ -32,6 +42,50 @@ export function Footer() {
             <p className="text-sm text-black/80 leading-relaxed max-w-sm">
               We empower modern enterprises and fast-growing founders with world-class web engineering, custom software, high-converting digital advertising, and autonomous AI automation.
             </p>
+
+            {/* Social Media Links */}
+            <div className="flex items-center gap-2.5 pt-1">
+              <a
+                href={SITE_CONFIG.socials.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acovate on LinkedIn"
+                title="LinkedIn"
+                className="w-9 h-9 rounded-xl bg-[#093103] text-white flex items-center justify-center transition-all duration-200 hover:bg-black hover:scale-110 shadow-sm"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acovate on Instagram"
+                title="Instagram"
+                className="w-9 h-9 rounded-xl bg-[#093103] text-white flex items-center justify-center transition-all duration-200 hover:bg-black hover:scale-110 shadow-sm"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acovate on Twitter / X"
+                title="Twitter / X"
+                className="w-9 h-9 rounded-xl bg-[#093103] text-white flex items-center justify-center transition-all duration-200 hover:bg-black hover:scale-110 shadow-sm"
+              >
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a
+                href={SITE_CONFIG.socials.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Acovate on GitHub"
+                title="GitHub"
+                className="w-9 h-9 rounded-xl bg-[#093103] text-white flex items-center justify-center transition-all duration-200 hover:bg-black hover:scale-110 shadow-sm"
+              >
+                <Github className="w-4 h-4" />
+              </a>
+            </div>
             <div className="flex flex-col space-y-2.5 pt-2 text-xs text-black">
               <div className="flex items-center gap-2.5">
                 <div className="w-5 h-5 rounded-full bg-[#093103] flex items-center justify-center shrink-0">
@@ -67,6 +121,11 @@ export function Footer() {
               <li>
                 <Link href="/about" className="text-black/80 hover:text-black font-medium transition-colors">
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/insights" className="text-black/80 hover:text-black font-medium transition-colors">
+                  Insights & Research
                 </Link>
               </li>
               <li>
@@ -168,7 +227,7 @@ export function Footer() {
 
         {/* Bottom copyright and legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-black/70">
-          <p>© {new Date().getFullYear()} Smarter World Agency. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Acovate Agency. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-black transition-colors">
               Privacy Policy

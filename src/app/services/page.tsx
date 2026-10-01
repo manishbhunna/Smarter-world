@@ -9,12 +9,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Digital Agency Services | Web, SaaS, Mobile & AI Solutions",
   description:
-    "Explore Smarter World's 11 core agency services: Website Development, Custom Web Apps, Ecommerce, Redesign, Enterprise Software, SaaS, Mobile Apps, Ads, and Autonomous AI Agent Automation.",
+    "Explore Acovate's 11 core agency services: Website Development, Custom Web Apps, Ecommerce, Redesign, Enterprise Software, SaaS, Mobile Apps, Ads, and Autonomous AI Agent Automation.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "Agency Services | Smarter World",
+    title: "Agency Services | Acovate",
     description:
       "Full-spectrum digital engineering and AI agent automation. Discover our complete technical solutions.",
     url: `${SITE_CONFIG.url}/services`,

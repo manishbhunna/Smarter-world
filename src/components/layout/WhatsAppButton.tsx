@@ -4,7 +4,7 @@ import { SITE_CONFIG } from "@/lib/utils";
 export function WhatsAppButton() {
   const phoneClean = SITE_CONFIG.contact.phone.replace(/\D/g, "");
   const defaultMessage = encodeURIComponent(
-    "Hello Smarter World, I would like to inquire about your engineering & AI services."
+    `Hello ${SITE_CONFIG.name}, I would like to inquire about your engineering & AI services.`
   );
   const whatsappUrl = `https://wa.me/${phoneClean}?text=${defaultMessage}`;
 

@@ -184,7 +184,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     shortDescription:
       "Data-driven paid media campaigns engineered with full-funnel tracking, audience segmentation, and high-converting landing pages.",
     fullDescription:
-      "Stop wasting ad spend on vanity metrics. Smarter World's performance marketing team combines technical conversion tracking (Meta CAPI & Google Offline Conversions), high-intent keyword targeting, dynamic creative testing, and bespoke landing pages to produce measurable customer acquisition ROI.",
+      "Stop wasting ad spend on vanity metrics. Acovate's performance marketing team combines technical conversion tracking (Meta CAPI & Google Offline Conversions), high-intent keyword targeting, dynamic creative testing, and bespoke landing pages to produce measurable customer acquisition ROI.",
     iconName: "Target",
     deliverables: [
       "Advanced Google Search, Performance Max, and Display setups",
@@ -323,7 +323,7 @@ export const STATS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Smarter World revolutionized our digital presence. They rebuilt our core web platform with Next.js and implemented AI automated lead scoring that immediately boosted our sales qualified leads by 180%. Truly world-class engineers.",
+      "Acovate revolutionized our digital presence. They rebuilt our core web platform with Next.js and implemented AI automated lead scoring that immediately boosted our sales qualified leads by 180%. Truly world-class engineers.",
     author: "Elena Vance",
     role: "VP of Product",
     company: "CloudSphere Technologies",
@@ -331,7 +331,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "Unlike traditional agencies that push cookie-cutter templates, Smarter World understands modern software engineering and autonomous AI agents. Their work on our multi-tenant SaaS platform was flawless.",
+      "Unlike traditional agencies that push cookie-cutter templates, Acovate understands modern software engineering and autonomous AI agents. Their work on our multi-tenant SaaS platform was flawless.",
     author: "Marcus Sterling",
     role: "Founder & CEO",
     company: "ScaleFlow Systems",

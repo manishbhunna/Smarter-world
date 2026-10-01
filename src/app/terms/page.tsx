@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Smarter World",
-  description: "Terms of service and client engagement agreements for Smarter World agency.",
+  title: "Terms of Service | Acovate",
+  description: "Terms of service and client engagement agreements for Acovate agency.",
   alternates: {
     canonical: "/terms",
   },
@@ -38,12 +38,12 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-black pt-4">1. Scope of Services</h2>
           <p>
-            Smarter World provides high-performance website development, custom software engineering, SaaS architecture, mobile applications, advertising optimization, and autonomous AI system integration. All technical engagements are governed by formal Statements of Work (SOW) outlining milestones and deliverables.
+            Acovate provides high-performance website development, custom software engineering, SaaS architecture, mobile applications, advertising optimization, and autonomous AI system integration. All technical engagements are governed by formal Statements of Work (SOW) outlining milestones and deliverables.
           </p>
 
           <h2 className="text-xl font-bold text-black pt-4">2. Intellectual Property Ownership</h2>
           <p>
-            Upon full settlement of agreed project invoices, all custom source code, documentation, UI/UX designs, and bespoke software artifacts belong 100% to the client. Smarter World retains no ownership rights over your proprietary code or business assets.
+            Upon full settlement of agreed project invoices, all custom source code, documentation, UI/UX designs, and bespoke software artifacts belong 100% to the client. Acovate retains no ownership rights over your proprietary code or business assets.
           </p>
 
           <h2 className="text-xl font-bold text-black pt-4">3. Warranties & Code Integrity</h2>

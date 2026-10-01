@@ -14,14 +14,14 @@ import { CtaBanner } from "@/components/sections/CtaBanner";
 import { SITE_CONFIG } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "About Us | Smarter World Digital & AI Agency",
+  title: "About Us | Acovate Digital & AI Agency",
   description:
-    "Learn about Smarter World, our engineering philosophy, mission, core values, and how we empower modern businesses with cutting-edge web development and AI automation.",
+    "Learn about Acovate, our engineering philosophy, mission, core values, and how we empower modern businesses with cutting-edge web development and AI automation.",
   alternates: {
     canonical: "/about",
   },
   openGraph: {
-    title: "About Smarter World | Digital & AI Agency",
+    title: "About Acovate | Digital & AI Agency",
     description:
       "Our mission is to help companies build faster, scale smarter, and leverage autonomous AI systems with confidence.",
     url: `${SITE_CONFIG.url}/about`,
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-5">
             <Badge className="text-xs uppercase tracking-wider bg-[#093103] text-white">
-              About Smarter World
+              About Acovate
             </Badge>
             <h1 className="text-4xl sm:text-6xl font-black text-black tracking-tight leading-tight">
               Building the Digital Engines That Power the Future
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 To bridge human ambition and autonomous technology
               </h2>
               <p className="text-base text-black/80 leading-relaxed">
-                Traditional agencies often deliver slow websites, bloated templates, and vague promises. At <strong className="text-black font-bold">Smarter World</strong>, we believe every modern company deserves an enterprise-grade digital foundation.
+                Traditional agencies often deliver slow websites, bloated templates, and vague promises. At <strong className="text-black font-bold">Acovate</strong>, we believe every modern company deserves an enterprise-grade digital foundation.
               </p>
               <p className="text-base text-black/80 leading-relaxed">
                 We combine the aesthetic polish of high-end design with the computational horsepower of modern TypeScript, Next.js, and autonomous AI agents. The outcome? Unrivaled speed, higher customer conversion, and automated operations that compound your advantage.
@@ -137,7 +137,7 @@ export default function AboutPage() {
               <div className="relative z-10 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#093103] text-white text-xs font-semibold shadow-sm">
                   <Sparkles className="w-3.5 h-3.5 text-white" />
-                  <span>The Smarter World Standard</span>
+                  <span>The Acovate Standard</span>
                 </div>
 
                 <h3 className="text-2xl font-bold tracking-tight text-black">
@@ -231,7 +231,7 @@ export default function AboutPage() {
               Our Journey
             </Badge>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-black">
-              Evolution of Smarter World
+              Evolution of Acovate
             </h2>
             <p className="text-base text-black/80">
               From high-performance frontend builds to enterprise autonomous AI agents.

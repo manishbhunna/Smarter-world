@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { SITE_CONFIG } from "@/lib/utils";
 import { SERVICES_DATA } from "@/data/servicesData";
+import { INSIGHTS_DATA } from "@/data/insightsData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_CONFIG.url;
@@ -16,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/services`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/insights`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
@@ -42,5 +49,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...serviceRoutes];
+  // Individual technical insight routes
+  const insightRoutes: MetadataRoute.Sitemap = INSIGHTS_DATA.map((post) => ({
+    url: `${baseUrl}/insights/${post.slug}`,
+    lastModified: currentDate,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...insightRoutes];
 }

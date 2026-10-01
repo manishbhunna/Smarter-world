@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_CONFIG.name} | Digital Engineering & AI Solutions Agency`,
     description: SITE_CONFIG.description,
-    creator: "@smarterworld_ai",
+    creator: "@acovate_ai",
   },
   robots: {
     index: true,

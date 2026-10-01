@@ -25,7 +25,7 @@ import { Button } from "@/components/ui/button";
 
 const FAQS = [
   {
-    q: "How does Smarter World compare to traditional digital agencies?",
+    q: "How does Acovate compare to traditional digital agencies?",
     a: "Unlike legacy agencies that rely on outsourced teams or slow markup templates, we are senior engineers and AI practitioners. We write clean, typed TypeScript code, utilize the modern Next.js ecosystem, build autonomous AI agents, and guarantee sub-second page performance with 95+ Core Web Vitals.",
   },
   {
@@ -315,7 +315,7 @@ export function ServicesClient() {
                           size="lg"
                           className="w-full justify-center h-12 rounded-xl font-bold bg-[#093103] text-white hover:bg-black shadow-forest group"
                         >
-                          <span>Inquire About {service.title}</span>
+                          <span>View More</span>
                           <ArrowRight className="w-4 h-4 ml-2 text-white transition-transform duration-200 group-hover:translate-x-1" />
                         </Button>
                       </Link>
@@ -452,7 +452,7 @@ export function ServicesClient() {
               <tr className="border-b border-[#093103]/25 bg-[#dbd8cf]">
                 <th className="py-4 px-5 font-extrabold text-black">Engineering Standard</th>
                 <th className="py-4 px-5 font-black text-white bg-[#093103] rounded-t-xl border-x border-[#093103]">
-                  Smarter World Agency
+                  Acovate
                 </th>
                 <th className="py-4 px-5 font-bold text-black/70">Freelance Marketplaces</th>
                 <th className="py-4 px-5 font-bold text-black/70">Legacy Agencies</th>

@@ -1,19 +1,19 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Mail, Phone, MapPin, Clock, CheckCircle, ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, CheckCircle, ArrowRight, ShieldCheck, Sparkles, Linkedin, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Smarter World Digital & AI Agency",
+  title: "Contact Us | Acovate Digital & AI Agency",
   description:
-    "Get in touch with Smarter World. Discuss your web development, custom software, SaaS, or AI agent automation project directly with our senior engineering team.",
+    "Get in touch with Acovate. Discuss your web development, custom software, SaaS, or AI agent automation project directly with our senior engineering team.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact Smarter World | Digital & AI Agency",
+    title: "Contact Acovate | Digital & AI Agency",
     description:
       "Connect with our senior engineering leads. 24-hour turnaround guaranteed.",
     url: `${SITE_CONFIG.url}/contact`,
@@ -181,13 +181,35 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="pt-2">
-              <a href={`mailto:${SITE_CONFIG.contact.email}?subject=${encodeURIComponent("Project Architecture & Scoping Inquiry")}`}>
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <a href={`mailto:${SITE_CONFIG.contact.email}?subject=${encodeURIComponent("Project Architecture & Scoping Inquiry")}`} className="flex-1 sm:flex-initial">
                 <Button size="lg" className="w-full sm:w-auto shadow-forest font-bold bg-[#093103] text-white hover:bg-black">
                   <span>Send Direct Email to Principal Lead</span>
                   <ArrowRight className="w-4 h-4 ml-2 text-white" />
                 </Button>
               </a>
+              <div className="flex items-center gap-2 self-center sm:self-auto">
+                <a
+                  href={SITE_CONFIG.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Acovate on LinkedIn"
+                  title="Connect on LinkedIn"
+                  className="w-11 h-11 rounded-xl bg-[#093103] text-white flex items-center justify-center hover:bg-black hover:scale-105 transition-all shadow-sm"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href={SITE_CONFIG.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Acovate on Instagram"
+                  title="Follow on Instagram"
+                  className="w-11 h-11 rounded-xl bg-[#093103] text-white flex items-center justify-center hover:bg-black hover:scale-105 transition-all shadow-sm"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
 

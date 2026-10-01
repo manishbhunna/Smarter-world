@@ -75,8 +75,8 @@ export function HeroSection() {
               </div>
 
               {/* Monumental Headline */}
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black text-black tracking-tight leading-[1.06] mb-5 sm:mb-6">
-                Engineering the Smarter World of Digital Products
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-black tracking-tight leading-[1.08] mb-5 sm:mb-6">
+                Engineering the Acovate World of Digital Products
               </h1>
 
               {/* Editorial Lead Paragraph */}
