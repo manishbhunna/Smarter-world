@@ -13,6 +13,7 @@ import {
   Star,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getAssetPath } from "@/lib/utils";
 
 const STAT_ITEMS = [
   { value: "99.98%", label: "Target Availability", detail: "Global edge uptime SLA guarantee" },
@@ -124,7 +125,7 @@ export function HeroSection() {
           <div className="lg:col-span-6 flex items-center justify-center w-full">
             <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#093103]/20 bg-gradient-to-br from-[#093103] via-[#0d4405] to-[#041701] group">
               <Image
-                src="/images/hero-agency.jpg"
+                src={getAssetPath("/images/hero-agency.jpg")}
                 alt="Acovate AI Engineering & Digital Product Team"
                 fill
                 priority
