@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -9,40 +10,9 @@ import {
   ShieldCheck,
   Zap,
   Sparkles,
-  Globe,
-  Bot,
-  Cpu,
   Star,
-  Layers,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const SPOTLIGHT_SERVICES = [
-  {
-    id: "web",
-    icon: Globe,
-    title: "Next.js Web Engineering",
-    stat: "99/100 Lighthouse",
-    description: "Sub-second responsive platforms built for conversion and technical SEO dominance.",
-    tags: ["Next.js 14", "Edge CDN", "SEO Architecture"],
-  },
-  {
-    id: "ai",
-    icon: Bot,
-    title: "Autonomous AI Workflows",
-    stat: "24/7 Operations",
-    description: "Multi-agent pipelines and enterprise RAG systems automating business processes.",
-    tags: ["Autonomous Agents", "RAG Pipeline", "Vector DB"],
-  },
-  {
-    id: "saas",
-    icon: Cpu,
-    title: "Custom Software & SaaS",
-    stat: "99.98% SLA",
-    description: "Type-safe cloud software engineered to scale with full intellectual property transfer.",
-    tags: ["TypeScript", "PostgreSQL", "AWS Cloud"],
-  },
-];
 
 const STAT_ITEMS = [
   { value: "99.98%", label: "Target Availability", detail: "Global edge uptime SLA guarantee" },
@@ -54,18 +24,16 @@ const STAT_ITEMS = [
 const CLIENT_AVATARS = ["AK", "MR", "SL", "DR"];
 
 export function HeroSection() {
-  const [hoveredService, setHoveredService] = useState<string>("web");
-
   return (
     <section className="relative overflow-hidden bg-[#dbd8cf] border-b border-[#093103]/20 pt-12 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
       {/* Background Architectural Subtle Grid Pattern */}
       <div className="absolute inset-0 bg-grid-white opacity-30 pointer-events-none -z-10 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Asymmetrical Split Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-start">
+        {/* Balanced Split Hero Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-14 items-center">
           {/* Left Column: Headline, Narrative & Conversion CTAs */}
-          <div className="lg:col-span-7 flex flex-col justify-between">
+          <div className="lg:col-span-6 flex flex-col justify-between">
             <div>
               {/* Eyebrow Live Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#093103] text-white text-xs font-bold uppercase tracking-wider shadow-sm mb-6">
@@ -152,97 +120,17 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Architectural Capabilities Spotlight Card */}
-          <div className="lg:col-span-5">
-            <div className="rounded-3xl border-2 border-[#093103] bg-[#dbd8cf] p-6 sm:p-7 shadow-forest relative overflow-hidden">
-              {/* Header */}
-              <div className="flex items-center justify-between pb-3.5 mb-4 border-b border-[#093103]/20">
-                <div className="flex items-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#093103]" />
-                  <span className="text-xs font-black uppercase tracking-wider text-black">
-                    Core Technical Pillars
-                  </span>
-                </div>
-                <span className="text-[10px] font-bold bg-[#093103] text-white px-2 py-0.5 rounded-full">
-                  ENTERPRISE GRADE
-                </span>
-              </div>
-
-              {/* Spotlight Items */}
-              <div className="space-y-3">
-                {SPOTLIGHT_SERVICES.map((item) => {
-                  const Icon = item.icon;
-                  const isHovered = hoveredService === item.id;
-                  return (
-                    <div
-                      key={item.id}
-                      onMouseEnter={() => setHoveredService(item.id)}
-                      className={`p-4 rounded-2xl border-2 transition-all duration-200 cursor-pointer ${
-                        isHovered
-                          ? "bg-[#093103] text-white border-[#093103] shadow-forest"
-                          : "bg-[#dbd8cf] text-black border-[#093103]/25 hover:border-[#093103]"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between gap-2 mb-1.5">
-                        <div className="flex items-center gap-2 font-black text-sm">
-                          <div
-                            className={`w-6 h-6 rounded-md flex items-center justify-center ${
-                              isHovered ? "bg-white text-[#093103]" : "bg-[#093103] text-white"
-                            }`}
-                          >
-                            <Icon className="w-3.5 h-3.5" />
-                          </div>
-                          <span>{item.title}</span>
-                        </div>
-                        <span
-                          className={`text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider ${
-                            isHovered ? "bg-white text-[#093103]" : "bg-[#093103] text-white"
-                          }`}
-                        >
-                          {item.stat}
-                        </span>
-                      </div>
-
-                      <p
-                        className={`text-xs leading-relaxed mb-2.5 ${
-                          isHovered ? "text-white/90" : "text-black/80"
-                        }`}
-                      >
-                        {item.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-1">
-                        {item.tags.map((t) => (
-                          <span
-                            key={t}
-                            className={`text-[10px] font-bold px-2 py-0.5 rounded ${
-                              isHovered
-                                ? "bg-white/20 text-white"
-                                : "bg-[#dbd8cf] text-black border border-[#093103]/30"
-                            }`}
-                          >
-                            {t}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Bottom Card Action Link */}
-              <div className="pt-3.5 mt-3 border-t border-[#093103]/15">
-                <Link
-                  href="/services"
-                  className="flex items-center justify-between p-3 rounded-xl border border-[#093103] bg-[#dbd8cf] text-black font-bold text-xs hover:bg-[#093103] hover:text-white transition-all group"
-                >
-                  <span className="flex items-center gap-2">
-                    <Layers className="w-4 h-4" />
-                    <span>View All 11 Engineering Practices</span>
-                  </span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </div>
+          {/* Right Column: Prominent Clean Hero Photo (No card wrapper, no text on photo) */}
+          <div className="lg:col-span-6 flex items-center justify-center w-full">
+            <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#093103]/20 bg-gradient-to-br from-[#093103] via-[#0d4405] to-[#041701] group">
+              <Image
+                src="/images/hero-agency.jpg"
+                alt="Acovate AI Engineering & Digital Product Team"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 650px"
+                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
             </div>
           </div>
         </div>

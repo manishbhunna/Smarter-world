@@ -105,9 +105,9 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden border-b border-[#093103]/20 bg-[#dbd8cf] px-4 pt-3 pb-6 space-y-3 shadow-card animate-in slide-in-from-top-2">
+        <div className="md:hidden border-b border-[#093103]/20 bg-[#dbd8cf] px-4 pt-3 pb-6 shadow-card animate-in slide-in-from-top-2">
           <nav className="flex flex-col space-y-1.5 text-center" aria-label="Mobile Navigation">
-            {navLinks.map((link) => {
+            {[...navLinks, { href: "/contact", label: "Contact Now" }].map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
@@ -124,15 +124,6 @@ export function Navbar() {
               );
             })}
           </nav>
-
-          <div className="pt-2">
-            <Link
-              href="/contact"
-              className="flex items-center justify-center w-full px-4 py-3 text-sm font-bold rounded-xl text-white bg-[#093103] hover:bg-black shadow-forest transition-all"
-            >
-              Contact Now
-            </Link>
-          </div>
         </div>
       )}
     </header>
