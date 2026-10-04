@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ServicesOverviewSection } from "@/components/sections/ServicesOverviewSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { CaseStudiesSection } from "@/components/sections/CaseStudiesSection";
+import { ProjectScopeCalculator } from "@/components/sections/ProjectScopeCalculator";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { SITE_CONFIG } from "@/lib/utils";
@@ -30,6 +31,7 @@ export default function HomePage() {
       <ServicesOverviewSection showFilters={true} />
       <ProcessSection />
       <CaseStudiesSection />
+      <ProjectScopeCalculator />
       <TestimonialsSection />
       <CtaBanner />
     </>
