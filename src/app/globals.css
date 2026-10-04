@@ -102,3 +102,12 @@
   box-shadow: 0 8px 30px -4px rgba(9, 49, 3, 0.16);
   transform: translateY(-2px);
 }
+
+/* Hide scrollbar for clean touch-scrolling ribbons */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
